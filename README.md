@@ -1,4 +1,26 @@
-<h1 align="center">InfluxDB and Docker </h1>
+<h1 align="center">InfluxDB ve Docker Kurulumu</h1>
+
+Not: Aşağıdaki konfigürasyonlar Windows üzerinde çalıştırmak içindir. 
+
+Öncelikle Windows için Docker Desktop indirilir. Docker compose, docker engine vs hepsi bu indirmeyle birlikte yüklenmiş olur. Docker Desktop yüklendikten sonra Docker account oluşturulur. 
+
+Docker Desktop uygulaması üzerinde Volume, Image ve Container bilgilerinizi görebilirsiniz. Docker Desktop'un yanı sıra Command Prompt üzerinden de ilgili Docker komutları ile istediğiniz eylemleri gerçekleştirebilirsiniz.
+
+Ayrıca çalıştırdığınız Container'larınızın üzerindeki CLI butonu ile kolayca kurduğunuz uygulamanın komut satırı arayüzüne erişebilirsiniz.
+
+
+
+
+
+docker pull influxdb:latest
+
+docker pull telegraf:latest
+
+docker pull grafana:latest
+
+
+docker run -d --name=influxdb -p 8086:8086 influxdb
+docker run -d --name=grafana -p 3000:3000 grafana
 
 
 
