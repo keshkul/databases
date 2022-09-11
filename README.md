@@ -12,16 +12,25 @@ Ayrıca çalıştırdığınız Container'larınızın üzerindeki CLI butonu il
 
 
 
+```
 docker pull influxdb:latest
+```
 
+```
 docker pull telegraf:latest
+```
 
+```
 docker pull grafana:latest
+```
 
-
+```
 docker run -d --name=influxdb -p 8086:8086 influxdb
-docker run -d --name=grafana -p 3000:3000 grafana
+```
 
+```
+docker run -d --name=grafana -p 3000:3000 grafana
+```
 
 
 
